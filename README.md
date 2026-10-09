@@ -5,7 +5,7 @@ Uma aventura de Bob Roll em um castelo assombrado. Castle Roll é um jogo de pla
 ## Capa
 
 <!-- Substitua CAMINHO_DA_IMAGEM_DE_CAPA pelo caminho relativo da imagem ou por uma URL. -->
-![Capa do Castle Roll](CAMINHO_DA_IMAGEM_DE_CAPA)
+![Capa do Castle Roll](https://portifolio-denilsom-lobo.web.app/images/capa/castle_roll.png)
 
 ## Como é o jogo
 
@@ -21,8 +21,6 @@ Guie Bob Roll pelas plataformas do castelo, supere abismos, enfrente inimigos e 
 - Ranking com modos local, online via servidor e global via Firebase.
 
 ## Imagens do gameplay
-
-Troque os três caminhos abaixo por imagens do jogo. Você pode usar arquivos do repositório, como `docs/images/gameplay-1.png`, ou URLs completas.
 
 ### Imagem 1 — Portões da Noite
 
