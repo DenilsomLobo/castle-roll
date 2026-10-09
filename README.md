@@ -2,8 +2,6 @@
 
 Uma aventura de Bob Roll em um castelo assombrado. Castle Roll é um jogo de plataforma 2D para navegador, com exploração, combate com chicote e uma campanha de três fases.
 
-## Capa
-
 <!-- Substitua CAMINHO_DA_IMAGEM_DE_CAPA pelo caminho relativo da imagem ou por uma URL. -->
 ![Capa do Castle Roll](https://portifolio-denilsom-lobo.web.app/images/capa/castle_roll.png)
 
