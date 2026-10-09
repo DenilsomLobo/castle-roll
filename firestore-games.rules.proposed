@@ -1,0 +1,58 @@
+// PROPOSTA CONJUNTA: Castle Roll e Hiper Catch. Revisar antes de publicar.
+// Integre este match às regras existentes, preservando outras coleções.
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /ranking_castle_roll/{resultId} {
+      allow read: if true;
+      allow create: if request.auth != null
+        && request.auth.token.firebase.sign_in_provider == 'anonymous'
+        && request.resource.data.keys().hasAll(['nome', 'pontos', 'fase', 'uid', 'runId', 'criadoEm'])
+        && request.resource.data.keys().hasOnly(['nome', 'pontos', 'fase', 'uid', 'runId', 'criadoEm'])
+        && request.resource.data.nome is string
+        && request.resource.data.nome.size() >= 2
+        && request.resource.data.nome.size() <= 20
+        && request.resource.data.nome.matches('^[^\\x00-\\x1F\\x7F]+$')
+        && request.resource.data.pontos is int
+        && request.resource.data.pontos >= 0
+        && request.resource.data.pontos <= 2147483647
+        && request.resource.data.fase is int
+        && request.resource.data.fase >= 1
+        && request.resource.data.fase <= 3
+        && request.resource.data.uid is string
+        && request.resource.data.uid.size() > 0
+        && request.resource.data.uid.size() <= 128
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.runId is string
+        && request.resource.data.runId.size() == 36
+        && request.resource.data.runId.matches('^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$')
+        && resultId == request.resource.data.runId
+        && request.resource.data.criadoEm is timestamp
+        && request.resource.data.criadoEm == request.time;
+      allow update, delete: if false;
+    }
+
+match /ranking_hiper_catch/{resultId} {
+  allow read: if true;
+  allow create: if request.auth != null
+    && request.auth.token.firebase.sign_in_provider == 'anonymous'
+    && request.resource.data.keys().hasAll(['nome', 'pontos', 'dataHora', 'uid'])
+    && request.resource.data.keys().hasOnly(['nome', 'pontos', 'dataHora', 'uid'])
+    && request.resource.data.nome is string
+    && request.resource.data.nome.size() >= 1
+    && request.resource.data.nome.size() <= 96
+    && request.resource.data.nome.matches('^[^\\x00-\\x1F\\x7F]+$')
+    && request.resource.data.pontos is int
+    && request.resource.data.pontos >= 0
+    && request.resource.data.pontos <= 2147483647
+    && request.resource.data.dataHora is timestamp
+    && request.resource.data.dataHora == request.time
+    && request.resource.data.uid is string
+    && request.resource.data.uid.size() > 0
+    && request.resource.data.uid.size() <= 128
+    && request.resource.data.uid == request.auth.uid;
+  allow update, delete: if false;
+}
+
+  }
+}

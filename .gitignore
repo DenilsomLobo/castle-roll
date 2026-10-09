@@ -1,0 +1,17 @@
+server/data/
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+
+# Logs e arquivos temporários
+*.log
+npm-debug.log*
+*.tmp
+*.temp
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+Desktop.ini

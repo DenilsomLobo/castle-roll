@@ -1,0 +1,10 @@
+.git
+.codex
+.agents
+.env
+.env.*
+node_modules
+dist
+server/data
+tests
+*.log

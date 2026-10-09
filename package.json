@@ -1,0 +1,10 @@
+{
+  "name": "castle-roll",
+  "private": true,
+  "engines": { "node": ">=24 <25" },
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "start": "node server/index.cjs",
+    "test": "node tests/smoke.cjs && node tests/boss3-layout.cjs && node tests/audio.cjs && node tests/touch.cjs && node tests/local-ranking.cjs && node tests/ranking.cjs && node tests/security.cjs && node tests/online-ranking.cjs"
+  }
+}
