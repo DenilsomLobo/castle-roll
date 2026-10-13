@@ -2,7 +2,6 @@
 
 Uma aventura de Bob Roll em um castelo assombrado. Castle Roll é um jogo de plataforma 2D para navegador, com exploração, combate com chicote e uma campanha de três fases.
 
-<!-- Substitua CAMINHO_DA_IMAGEM_DE_CAPA pelo caminho relativo da imagem ou por uma URL. -->
 ![Capa do Castle Roll](https://portifolio-denilsom-lobo.web.app/images/capa/castle_roll.png)
 
 ## Como é o jogo
@@ -22,15 +21,15 @@ Guie Bob Roll pelas plataformas do castelo, supere abismos, enfrente inimigos e 
 
 ### Imagem 1 — Portões da Noite
 
-![Gameplay: Portões da Noite](CAMINHO_DA_IMAGEM_1)
+![Gameplay: Portões da Noite](https://portifolio-denilsom-lobo.web.app/images/git_hub_imgs/castle_img_01.png)
 
 ### Imagem 2 — Interior do Castelo
 
-![Gameplay: Interior do Castelo](CAMINHO_DA_IMAGEM_2)
+![Gameplay: Interior do Castelo](https://portifolio-denilsom-lobo.web.app/images/git_hub_imgs/castle_img_02.png)
 
 ### Imagem 3 — Grande Salão
 
-![Gameplay: Grande Salão](CAMINHO_DA_IMAGEM_3)
+![Gameplay: Grande Salão]([CAMINHO_DA_IMAGEM_3](https://portifolio-denilsom-lobo.web.app/images/git_hub_imgs/castle_img_03.png)
 
 ## Tecnologias usadas
 
@@ -138,4 +137,4 @@ git commit -m "Adiciona Castle Roll e documentação"
 
 Desenvolvido por **Denilsom Lobo de Souza**.
 
-[Portfólio](https://portifolio-denilsom-lobo.web.app/)
+[Portfólio](https://portifolio-denilsom-lobo.web.app/games.html)
